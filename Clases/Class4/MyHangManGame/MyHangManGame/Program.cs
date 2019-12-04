@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MyHangManGame.Clases;
 
 namespace MyHangManGame
 {
@@ -10,94 +11,41 @@ namespace MyHangManGame
     {
         static void Main(string[] args)
         {
-            string secretWord = "zapato";
-            int life = 3;
+            GameManager gameManager = new GameManager("zapato");            
 
-            string response = "";
-            String letter = "";
+            Board board = new Board();
 
-            StringBuilder total = new StringBuilder();
+            Player player = new Player(3,"","");
 
-            bool validate = false;
+            player.setWord(board.writeInitial(gameManager.getSecretWord()));
 
-            for(int i = 0; i < secretWord.Length; i++) {
-                total.Append("*");
-            }
-            response = total.ToString();
-
-            while(life > 0) {
-                Console.Clear();
-                Console.WriteLine(total);
-                Console.WriteLine("Ingrese una letra;");
-                Console.WriteLine("Vidas: " +life);
-                if(secretWord.Equals("" + total))
+            while(player.getLife() > 0)
+            {
+                board.Clear();
+                board.Draw(player.getWord());
+                board.Draw("Ingrese una letra;");
+                board.Draw("Vidas: " + player.getLife());
+                if(gameManager.getSecretWord().Equals("" + player.getWord()))
                 {
                     break;
                 }
-                letter = Console.ReadLine();
-                validate = secretWord.Contains(letter);
-
-
-            if(validate)
-            {
-                    
-                   response = complete(letter[0],secretWord,response);
-                    total.Clear();
-                    total.Append(response);
-
-                    Console.WriteLine(total);
-
-                }
-            else
-            {
-                life --;
-                    
-
-                }
-
-        }
-
-            if(secretWord.Equals("" + total))
-            {
-                Console.Clear();
-                Console.Write("Ganaste!!!!");
-
-            }
-            else {
-                Console.Clear();
-                Console.Write("Perdiste!!!");
-            }
-
-
-            Console.ReadLine();
-        }
-
-        public static string complete(char letter, string word, string response) {
-
-            char[] arrayWord = word.ToCharArray();
-            String final = "";
-            for(int i = 0; i < arrayWord.Length; i++) {
-                if(arrayWord[i].Equals(letter) && new string(response[i],1).Equals("*"))
+                player.setLetter(Console.ReadLine());
+                if(gameManager.check(player.getLetter()))
                 {
+                    player.setWord(Evaluate.complete(player.getLetter()[0],gameManager.getSecretWord(),player.getWord()));
 
-                    final = final + letter;
-                }
-                else if(!new string(response[i],1).Equals("*")) {
-                    final = final + new string(response[i],1);
+                    board.Draw(player.getWord());
                 }
                 else
                 {
-
-                    final = final + "*";
+                    player.setLife(player.getLife() - 1);
                 }
 
             }
 
-            return final;
+            gameManager.finalGame(player.getWord());
 
-
+            Console.ReadLine();
         }
-
-
     }
 }
