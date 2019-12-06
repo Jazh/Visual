@@ -22,6 +22,7 @@ namespace ClassExercises
 
         public void Stell()
         {
+            base.ShowActionMenu();
             Console.WriteLine("Steal");
 
             string action = Console.ReadLine();

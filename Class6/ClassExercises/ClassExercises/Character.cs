@@ -47,6 +47,7 @@ namespace ClassExercises
         }
         public virtual void ShowActionMenu()
         {
+            Console.WriteLine();
             Console.WriteLine("ACTIONS");
             Console.WriteLine("=======");
             Console.WriteLine("1 - walk");
