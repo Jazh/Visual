@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    [SerializeField]
+    [SerializeField]//sirve para que el inspector de unity lo pueda ver(consola).
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rigidbody2D;
     public float speed = 1f;
     public Animator animator;
 
-    public bool grounded { get { return RoundAbsoluteToZero(rigidbody2D.velocity.y) == 0; } }
+    public bool grounded { get { return RoundAbsoluteToZero(rigidbody2D.velocity.y) == 0f; } }
 
     // Start is called before the first frame update
     void Start()
@@ -26,18 +26,23 @@ public class NewBehaviourScript : MonoBehaviour
         
         animator.SetBool("walk",(h!=0));
         animator.SetBool("jump", !grounded);
+        animator.SetFloat("vertical", Mathf.Sign(rigidbody2D.velocity.y));
 
 
 
+        if(h != 0)
+        {
+            spriteRenderer.flipX = (h<0);
+        }
 
-        if(h > 0)
+        /*if(h > 0)
         {
             spriteRenderer.flipX = false;
         }
         else if(h < 0)
         {
             spriteRenderer.flipX = true;
-        }
+        }*/
 
 
         transform.Translate(Vector3.right * h * speed);
