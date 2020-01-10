@@ -7,6 +7,38 @@ public class NewBehaviourScript : MonoBehaviour
 
     static public NewBehaviourScript instance;
 
+    static public void SetPosition(Vector3 pos)
+    {
+        pos.z = 0;
+        instance.transform.position = pos;
+    }
+
+    static public Vector3 setPosition
+    {
+        set {
+            Vector3 pos = value;
+            pos.z = 0;
+            instance.transform.position = pos;
+        }
+    }
+
+    static public Transform setPosition2
+    {
+        set {
+            Vector3 pos = value.position;
+            pos.z = 0;
+            instance.transform.position = pos;
+        }
+    }
+
+    static public HealthBarController HealhBar
+    {
+        set {
+            instance.healthBarController = value;
+        }
+    }
+
+
     [SerializeField]//sirve para que el inspector de unity lo pueda ver(consola).
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rigidbody2D;
@@ -14,15 +46,31 @@ public class NewBehaviourScript : MonoBehaviour
     public Animator animator;
     public float jumpForce = 10f;
 
+
+
     public bool grounded { get { return RoundAbsoluteToZero(rigidbody2D.velocity.y) == 0f; } }
+    [SerializeField]
+    private HealthBarController healthBarController;
+
 
     public Vector3 startPos;
+
+    public float maxLife = 50;
+    public float currentLife;
+
+    //Primero se ejecutan todos los aweke y luego los start
+    void Awake() {
+
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+
+    }
+
 
     // Start is called before the first frame update
     void Start()
     {
-        instance = this;
-        DontDestroyOnLoad(gameObject);
+        currentLife = maxLife;
         startPos = transform.position;
 
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -63,6 +111,17 @@ public class NewBehaviourScript : MonoBehaviour
         }
 
 
+        if(Input.GetKeyDown(KeyCode.O))
+        {
+            TakeDamage(1f);
+        }
+
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            Heal(1f);
+        }
+
+
     }
 
     void OnCollisionEnter2D(Collision2D col) {
@@ -88,5 +147,19 @@ public class NewBehaviourScript : MonoBehaviour
             rigidbody2D.AddForce(Vector2.up * 2, ForceMode2D.Impulse);
         }
     }*/
+
+
+    void TakeDamage(float damage) {
+        currentLife -= damage;
+        healthBarController.currentLife = currentLife;
+
+    }
+
+    void Heal(float heal)
+    {
+        currentLife += heal;
+        healthBarController.currentLife = currentLife;
+
+    }
 
 }
