@@ -12,8 +12,16 @@ public class HealthBarController : MonoBehaviour
 
     public RectTransform middleBar;
     public RectTransform endBar;
-    public float maxLife = 50;
+    //Para barrar completa
+    //    public float maxLife = 50;
+    public float maxLife = 10;
     public float _currentLife;
+    //=============================================================
+    //Para barrar como megaman
+    public RectTransform backBar;
+    public RectTransform bar;
+    private float width;
+
 
     public float currentLife
     {
@@ -31,23 +39,25 @@ public class HealthBarController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _currentLife = maxLife;
+        //Para barrar completa
+        //_currentLife = maxLife;
+
+
+        _currentLife = 0;
+        width = bar.sizeDelta.x;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.O))
-        {
-            currentLife--;
+        if(Input.GetKeyDown(KeyCode.K)) {
+            //RemoveLife();
+            ClearLife();
         }
 
-        if(Input.GetKeyDown(KeyCode.P))
-        {
-            currentLife++;
-        }
     }
-
+    //Para barrar completa
+    /*
     void UpdateBar() {
        
         float lifePercent = currentLife / maxLife;
@@ -62,5 +72,40 @@ public class HealthBarController : MonoBehaviour
 
         middleBar.localScale = scale;
 
+    }*/
+    //=============================== Para barras de a uno como megaman
+
+    void UpdateBar()
+    {
+        ClearLife();
+
+
+            AddFile();
+        
+
     }
-}
+
+    void ClearLife() {
+        for(int i=0; i < backBar.childCount; i++) {
+            Destroy(backBar.GetChild(i).gameObject);
+        }
+    }
+
+    void AddFile() {
+
+        for(int i = 0; i < currentLife; i++)
+        {
+            RectTransform point = Instantiate<RectTransform>(bar);
+            point.parent = backBar;
+            point.localScale = Vector3.one;
+            point.localPosition = new Vector3(width * i,0,0);
+        }
+    }
+
+    void RemoveLife() {
+        //Debug.Log(backBar.childCount);
+        Destroy(backBar.GetChild(backBar.childCount - 1).gameObject);
+    }
+
+
+    }
