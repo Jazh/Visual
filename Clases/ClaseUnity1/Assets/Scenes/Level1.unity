@@ -281,6 +281,7 @@ MonoBehaviour:
   startPos: {x: 0, y: 0, z: 0}
   maxLife: 50
   currentLife: 0
+  bullet: {fileID: 6172596234217546581, guid: 0d2074dba553e1a46a0516fff27e2077, type: 3}
 --- !u!1 &565011500
 GameObject:
   m_ObjectHideFlags: 0

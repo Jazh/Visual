@@ -47,16 +47,20 @@ public class NewBehaviourScript : MonoBehaviour
     public float jumpForce = 10f;
 
 
-
     public bool grounded { get { return RoundAbsoluteToZero(rigidbody2D.velocity.y) == 0f; } }
     [SerializeField]
     private HealthBarController healthBarController;
 
 
-    public Vector3 startPos;
 
+    public Vector3 startPos;
+    [Header("Vida")]
+    [Tooltip("Vida Maxima")]
     public float maxLife = 50;
+    [Range(0f,50)]
     public float currentLife;
+
+    public BulletRock bullet;
 
     //Primero se ejecutan todos los aweke y luego los start
     void Awake() {
@@ -121,6 +125,15 @@ public class NewBehaviourScript : MonoBehaviour
             Heal(1f);
         }
 
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            Attack();
+        }
+        if(Input.GetKeyDown(KeyCode.G))
+        {
+            FastAttack();
+        }
+
 
     }
 
@@ -160,6 +173,22 @@ public class NewBehaviourScript : MonoBehaviour
         currentLife += heal;
         healthBarController.currentLife = currentLife;
 
+    }
+
+    void Attack() {
+       BulletRock clone = Instantiate<BulletRock>(bullet,transform.position,Quaternion.identity);
+
+        clone.InitDirection(spriteRenderer.flipX ? BulletRock.Direction.left : BulletRock.Direction.right);
+
+    }
+
+    void FastAttack()
+    {
+        BulletRock clone = Instantiate<BulletRock>(bullet,transform.position,Quaternion.identity);
+
+        //BulletRock bulletRock = clone.GetComponent<BulletRock>();
+        clone.Init(10);
+        clone.InitDirection(spriteRenderer.flipX ? BulletRock.Direction.left : BulletRock.Direction.right);
     }
 
 }
