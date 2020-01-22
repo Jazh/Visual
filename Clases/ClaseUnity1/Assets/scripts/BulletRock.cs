@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-
-public class BulletRock : MonoBehaviour
+namespace Platformer
+{
+    public class BulletRock : MonoBehaviour
 {
 
     public enum Direction {
@@ -40,4 +41,9 @@ public class BulletRock : MonoBehaviour
     {
         this.direction = direction;
     }
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            Destroy(gameObject);
+        }
+        }
 }

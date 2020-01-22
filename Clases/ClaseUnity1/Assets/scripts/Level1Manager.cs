@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Platformer;
+
 
 public class Level1Manager : MonoBehaviour
 {

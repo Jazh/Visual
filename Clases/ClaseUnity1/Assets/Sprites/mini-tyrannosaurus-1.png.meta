@@ -1,0 +1,607 @@
+fileFormatVersion: 2
+guid: ebf9fc8ddfbf6724d942ed37e8e7e020
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4170232994044098139
+    second: mini-tyrannosaurus-1_0
+  - first:
+      213: -4247409420531664658
+    second: mini-tyrannosaurus-1_1
+  - first:
+      213: -6368199053781291366
+    second: mini-tyrannosaurus-1_2
+  - first:
+      213: 8276966398751195466
+    second: mini-tyrannosaurus-1_3
+  - first:
+      213: -6202930432027559521
+    second: mini-tyrannosaurus-1_4
+  - first:
+      213: 872427047331768166
+    second: mini-tyrannosaurus-1_5
+  - first:
+      213: 5281719385123787950
+    second: mini-tyrannosaurus-1_6
+  - first:
+      213: -4996221339722379827
+    second: mini-tyrannosaurus-1_7
+  - first:
+      213: 9151054071580679944
+    second: mini-tyrannosaurus-1_8
+  - first:
+      213: 4971779505449008006
+    second: mini-tyrannosaurus-1_9
+  - first:
+      213: 247004499795669757
+    second: mini-tyrannosaurus-1_10
+  - first:
+      213: -1100816683167951369
+    second: mini-tyrannosaurus-1_11
+  - first:
+      213: 8631736724902567245
+    second: mini-tyrannosaurus-1_12
+  - first:
+      213: -8533290844874205737
+    second: mini-tyrannosaurus-1_13
+  - first:
+      213: 1605002531355796132
+    second: mini-tyrannosaurus-1_14
+  - first:
+      213: -280723287156332342
+    second: mini-tyrannosaurus-1_15
+  - first:
+      213: 8908557101807163978
+    second: mini-tyrannosaurus-1_16
+  - first:
+      213: -5848500667000052876
+    second: mini-tyrannosaurus-1_17
+  - first:
+      213: -6312603293270112672
+    second: mini-tyrannosaurus-1_18
+  - first:
+      213: 6326895558393055810
+    second: mini-tyrannosaurus-1_19
+  - first:
+      213: -4985931027806526374
+    second: mini-tyrannosaurus-1_20
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 186
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e067e89cb2e69747a1fa2fee7e366a7
+      internalID: 4170232994044098139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 186
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0988d581f4d41e5448de8384c831cb2d
+      internalID: -4247409420531664658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 186
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a246e0ad641c8374687eb443c9f930ca
+      internalID: -6368199053781291366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_3
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 186
+        width: 58
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb238b142a74fdb42ab99f56f1d2d8dc
+      internalID: 8276966398751195466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_4
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 186
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8e64ebc008f69469328e14a2557d49
+      internalID: -6202930432027559521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_5
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 186
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07484357dd9cbb4c9a4c0f08e142461
+      internalID: 872427047331768166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_6
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 124
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2f71f582fd53e4da3e1e2657ec6007
+      internalID: 5281719385123787950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_7
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 124
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc282afa5b580c34ebda40f324812f22
+      internalID: -4996221339722379827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_8
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 124
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3378ce276b8f9b04b913e2c0dea40689
+      internalID: 9151054071580679944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_9
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 62
+        width: 64
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727e967689c40a243b090f06d16d05a8
+      internalID: 4971779505449008006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_10
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 124
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c929cd67bad385a4eb0f60f2799e286e
+      internalID: 247004499795669757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_11
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 124
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4df73d0fe1240f4c9ff7f3913ad1a40
+      internalID: -1100816683167951369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_12
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 62
+        width: 62
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb58246c9d11a04088d0417a7a65588
+      internalID: 8631736724902567245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_13
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 62
+        width: 63
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f8a20301681314ab364c253042b7f9
+      internalID: -8533290844874205737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_14
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 62
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582e3c82f481a3045a54cc999078c4c5
+      internalID: 1605002531355796132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_15
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 62
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5c76e857b38f8498c9107c7616fa0f
+      internalID: -280723287156332342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_16
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 63
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2a085e969f8ec4a8ba4399f7355806
+      internalID: 8908557101807163978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a11eeb3363968c4cbabb8faafc0c86c
+      internalID: -5848500667000052876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_18
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 0
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064c0ad00f30c564f97556074be95804
+      internalID: -6312603293270112672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_19
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 0
+        width: 61
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8c1c3114fc76844a75d57a8c59b165
+      internalID: 6326895558393055810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mini-tyrannosaurus-1_20
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 68
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1dd698f66cd758498a5bfde06e549ed
+      internalID: -4985931027806526374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
