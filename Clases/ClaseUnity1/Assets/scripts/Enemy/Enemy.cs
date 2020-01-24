@@ -33,6 +33,10 @@ public class Enemy : MonoBehaviour
     }
 
         public void Destroy() {
+
+            SpawnController.Create();
+
+            //Spawner.Spawn();
             Destroy(gameObject);
         }
 
